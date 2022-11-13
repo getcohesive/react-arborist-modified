@@ -15,7 +15,7 @@ export function DefaultRow<T>({
       onFocus={(e) => e.stopPropagation()}
       onClick={node.handleClick}
     >
-      ABCD{children}
+      {children}
     </div>
   );
 }

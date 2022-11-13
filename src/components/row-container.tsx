@@ -68,7 +68,7 @@ export const RowContainer = React.memo(function RowContainer<T>({
 
   useEffect(() => {
     if (!node.isEditing && node.isFocused) {
-      el.current?.focus();
+      // el.current?.focus();
     }
   }, [node.isEditing, node.isFocused, el.current]);
 
@@ -76,7 +76,7 @@ export const RowContainer = React.memo(function RowContainer<T>({
   const Row = tree.renderRow;
 
   return (
-    <Row node={node} innerRef={innerRef} attrs={rowAttrs} border={2}>
+    <Row node={node} innerRef={innerRef} attrs={rowAttrs}>
       <Node node={node} tree={tree} style={nodeStyle} dragHandle={dragRef} />
     </Row>
   );
