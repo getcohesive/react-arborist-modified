@@ -54,7 +54,6 @@ export const RowContainer = React.memo(function RowContainer<T>({
       top:
         parseFloat(style.top as string) +
         (tree.props.padding ?? tree.props.paddingTop ?? 0),
-      border: "1px solid red",
     }),
     [style, tree.props.padding, tree.props.paddingTop]
   );
@@ -77,7 +76,7 @@ export const RowContainer = React.memo(function RowContainer<T>({
   const Row = tree.renderRow;
 
   return (
-    <Row node={node} innerRef={innerRef} attrs={rowAttrs}>
+    <Row node={node} innerRef={innerRef} attrs={rowAttrs} border={2}>
       <Node node={node} tree={tree} style={nodeStyle} dragHandle={dragRef} />
     </Row>
   );
