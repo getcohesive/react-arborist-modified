@@ -16,7 +16,7 @@ export function DefaultRow<T>({
       onClick={node.handleClick}
       style={{ outline: "1px solid green", background: "green", opacity: 0.2 }}
     >
-      {children}
+      ABCD{children}
     </div>
   );
 }
