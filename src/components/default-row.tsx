@@ -14,7 +14,7 @@ export function DefaultRow<T>({
       ref={innerRef}
       onFocus={(e) => e.stopPropagation()}
       onClick={node.handleClick}
-      style={{ outline: "none" }}
+      style={{ outline: "none", background: "green" }}
     >
       {children}
     </div>
