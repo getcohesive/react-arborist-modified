@@ -14,7 +14,6 @@ export function DefaultRow<T>({
       ref={innerRef}
       onFocus={(e) => e.stopPropagation()}
       onClick={node.handleClick}
-      style={{ outline: "1px solid green", background: "green", opacity: 0.2 }}
     >
       ABCD{children}
     </div>

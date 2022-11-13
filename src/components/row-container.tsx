@@ -54,6 +54,7 @@ export const RowContainer = React.memo(function RowContainer<T>({
       top:
         parseFloat(style.top as string) +
         (tree.props.padding ?? tree.props.paddingTop ?? 0),
+      border = "1px solid red",
     }),
     [style, tree.props.padding, tree.props.paddingTop]
   );
