@@ -68,7 +68,8 @@ export const RowContainer = React.memo(function RowContainer<T>({
 
   useEffect(() => {
     if (!node.isEditing && node.isFocused) {
-      // el.current?.focus();
+      console.log("Here99");
+      el.current?.focus();
     }
   }, [node.isEditing, node.isFocused, el.current]);
 
